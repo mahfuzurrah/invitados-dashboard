@@ -329,6 +329,10 @@ section {
   margin-bottom: 20px;
 }
 
+.table_header .btn{
+  width: max-content;
+}
+
 .table_title {
   display: flex;
   align-items: center;
