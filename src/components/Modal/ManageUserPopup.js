@@ -7,8 +7,8 @@ import InputField from "../inputField/InputField";
 function ManageUserPopup() {
   const [show, setShow] = useState(false);
   const [email, setEmail] = useState("");
-  const [type, setType] = useState("client");
-  const [role, setRole] = useState("");
+  const [type, setType] = useState("social");  // Default type is social
+  const [role, setRole] = useState("client"); // Default role is client
   const [clientId, setClientId] = useState("");
   const [fullName, setFullName] = useState("");
   const [password, setPassword] = useState("");
@@ -18,14 +18,20 @@ function ManageUserPopup() {
 
   const handleTypeChange = (selectedOption) => {
     setType(selectedOption.value);
-    if (selectedOption.value === "client") {
-      setPassword(""); // Reset password if type is client
+    if (selectedOption.value === "social") {
+      setFullName("");
+      setPassword(""); // Clear full name and password if type is social
     }
   };
 
   const handleRoleChange = (selectedOption) => {
     setRole(selectedOption.value);
   };
+
+  const types = [
+    { value: "social", label: "Social" },
+    { value: "local", label: "Local" },
+  ];
 
   const roles = [
     { value: "admin", label: "Admin" },
@@ -51,10 +57,10 @@ function ManageUserPopup() {
             <div className="mt-3">
               <label>Type *</label>
               <Selector
-                options={roles}
+                options={types}
                 placeholder="Select Type"
                 onChange={handleTypeChange}
-                value={roles.find((option) => option.value === type)}
+                value={types.find((option) => option.value === type)}
               />
             </div>
             <div className="mt-3">
@@ -70,7 +76,6 @@ function ManageUserPopup() {
               label="Client ID"
               value={clientId}
               onChange={(e) => setClientId(e.target.value)}
-              disabled
             />
             {type === "local" && (
               <>
