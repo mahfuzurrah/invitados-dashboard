@@ -30,7 +30,7 @@ const ManageUserTable = () => (
     dataSource={data}
     pagination={false}
     scroll={{
-      x: 550,
+      x: 991,
     }}
   >
     <Column title="ID" dataIndex="id" key="id" />

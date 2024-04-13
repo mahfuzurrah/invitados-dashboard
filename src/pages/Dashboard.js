@@ -67,8 +67,8 @@ function Dashboard() {
           </div>
           <div className="table_area mt-3">
             <div className="table_header">
-              <h2>Exercices</h2>
-              <Link to="#">
+              <h2>Recent Registration List</h2>
+              <Link to="/guests_list">
                 View all
                 <GrFormNextLink className="icons" />
               </Link>

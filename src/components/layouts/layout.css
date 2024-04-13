@@ -154,12 +154,13 @@
   }
 
   .side_navbar {
-    position: fixed;
-    left: -100%;
+    position: fixed !important;
+    left: 0;
   }
 
   .side_navbar.sider-collapsed {
-    left: 0;
+    left: -100%;
+    position: fixed !important;
   }
 }
 

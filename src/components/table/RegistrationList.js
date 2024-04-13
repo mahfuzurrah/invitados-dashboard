@@ -71,7 +71,7 @@ const RegistrationList = () => (
     dataSource={data}
     pagination={false}
     scroll={{
-      x: 550,
+      x: 991,
     }}
   >
     <Column title="Name" dataIndex="title" key="1" />

@@ -218,6 +218,7 @@ section {
 
 .from_area .btn_group {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 16px;
   justify-content: space-between;
@@ -290,6 +291,7 @@ section {
 
 .dashboard .card {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -308,6 +310,7 @@ section {
 
 .dashboard .card .time {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 10px;
 }
@@ -330,4 +333,17 @@ section {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+@media screen and (max-width: 576px) {
+  .input_group {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .dashboard .card img {
+    display: none;
+  }
 }
