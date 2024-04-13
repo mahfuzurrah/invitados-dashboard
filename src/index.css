@@ -341,9 +341,3 @@ section {
     flex-direction: column;
   }
 }
-
-@media screen and (max-width: 576px) {
-  .dashboard .card img {
-    display: none;
-  }
-}
