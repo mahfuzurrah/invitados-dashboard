@@ -177,7 +177,7 @@
     z-index: 999999;
     background: var(--primary-color);
   }
-  .header_dropdown{
+  .header_dropdown {
     background: transparent;
   }
 }
@@ -191,5 +191,9 @@
     position: relative;
     left: 10px;
     margin-left: -30px;
+  }
+
+  .dashboard {
+    margin-top: 50px;
   }
 }
