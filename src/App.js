@@ -6,11 +6,13 @@ import SignIn from "./pages/SignIn";
 import Guests from "./pages/Guests";
 import ManageRoles from "./pages/ManageRoles";
 import ManageUsers from "./pages/ManageUsers";
+import ScrollToTopOnReload from "./components/ScrollToTopOnReload";
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTopOnReload/>
         <Routes>
           <Route path="/" element={<SignIn />} />
           <Route path="/" element={<MainLayout />}>
