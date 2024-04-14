@@ -33,8 +33,8 @@ const ManageUserTable = () => (
       x: 991,
     }}
   >
-    <Column title="ID" dataIndex="id" key="id" />
     <Column title="Name" dataIndex="title" key="title" />
+    <Column title="ID" dataIndex="id" key="id" />
     <Column title="Type" dataIndex="type" key="type" />
     <Column
       title="Status"

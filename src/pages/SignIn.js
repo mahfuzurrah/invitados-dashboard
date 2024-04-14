@@ -43,17 +43,20 @@ function SignIn() {
               Sign in with Apple
             </button>
           </div>
+          <p className="my-3 text-center">OR</p>
           <form action="" className="input_form">
             <div className="input_group">
               <InputField
                 label="Email"
                 value={name}
+                placeholder="Email"
                 star="*"
                 onChange={handleNameChange}
               />
               <PasswordInput
                 label="Password"
                 value={pass}
+                placeholder="Password"
                 star="*"
                 onChange={handlepassChange}
               />

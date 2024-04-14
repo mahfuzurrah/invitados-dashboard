@@ -218,7 +218,6 @@ section {
 
 .from_area .btn_group {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 16px;
   justify-content: space-between;
@@ -343,5 +342,9 @@ section {
   .input_group {
     display: flex !important;
     flex-direction: column;
+  }
+
+  .from_area .btn_group{
+    flex-wrap: wrap;
   }
 }

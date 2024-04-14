@@ -90,7 +90,7 @@
   background: var(--white-color);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
   gap: 30px;
   padding: 20px;
   z-index: 99;
@@ -161,6 +161,11 @@
   .side_navbar.sider-collapsed {
     left: -100%;
     position: fixed !important;
+  }
+
+  .main_body .top_navbar{
+    justify-content: space-between !important;
+    z-index: 999999;
   }
 }
 

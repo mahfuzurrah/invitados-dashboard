@@ -5,7 +5,7 @@ import InputField from "../inputField/InputField";
 
 function AddUserPopup() {
   const [show, setShow] = useState(false);
-  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [type, setType] = useState("social");
   const [role, setRole] = useState("client");
   const [clientId, setClientId] = useState("");
@@ -42,16 +42,16 @@ function AddUserPopup() {
       <button onClick={handleShow} className="btn">
         Add User
       </button>
-      <Modal show={show} onHide={handleClose} className="add_label">
+      <Modal show={show} onHide={handleClose} className="add_label" centered> 
         <Modal.Header closeButton>
           <Modal.Title>User Info</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="input_group">
             <InputField
-              label="Full Name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              label="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <div className="mt-3">
               <label>Type *</label>

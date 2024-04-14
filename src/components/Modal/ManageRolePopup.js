@@ -27,7 +27,7 @@ function ManageRolePopup() {
       <button onClick={handleShow}>
         <FaPen className="icons" />
       </button>
-      <Modal show={show} onHide={handleClose} className="add_label">
+      <Modal show={show} onHide={handleClose} className="add_label" centered>
         <Modal.Header closeButton>
           <Modal.Title>Role Info</Modal.Title>
         </Modal.Header>

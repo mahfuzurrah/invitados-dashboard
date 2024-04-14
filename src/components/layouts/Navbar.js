@@ -4,9 +4,7 @@ import { FaBars } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
 import User from "../assets/img/user.png";
-import Search from "../search/Search";
-import { IoNotifications } from "react-icons/io5";
-
+import mobile_logo from "../assets/svg/mobile_logo.svg";
 
 function Navbar({ toggleSidebar }) {
   const items = [
@@ -22,11 +20,13 @@ function Navbar({ toggleSidebar }) {
 
   return (
     <>
-      <div>
-        <Search />
+      <div className="toggle_btn" onClick={toggleSidebar}>
+        <FaBars className="icons" />
+      </div>
+      <div className="mobile_logo">
+      <img src={mobile_logo} alt="" />
       </div>
       <div className="right_area">
-        <IoNotifications className="icons"/>
         <Dropdown menu={{ items }} className="mobile_hide">
           <Link onClick={(e) => e.preventDefault()}>
             <Space className="header_dropdown">
@@ -38,9 +38,6 @@ function Navbar({ toggleSidebar }) {
             </Space>
           </Link>
         </Dropdown>
-        <div className="toggle_btn" onClick={toggleSidebar}>
-          <FaBars className="icons" />
-        </div>
       </div>
     </>
   );
