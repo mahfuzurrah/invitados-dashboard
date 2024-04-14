@@ -197,7 +197,11 @@
     margin-top: 50px;
   }
 
+  .dashboard .card {
+    padding: 20px;
+  }
+
   .dashboard .card img {
-    width: 30px;
+    width: 35px;
   }
 }
