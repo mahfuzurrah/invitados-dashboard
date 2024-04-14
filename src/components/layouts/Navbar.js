@@ -27,14 +27,14 @@ function Navbar({ toggleSidebar }) {
       <img src={mobile_logo} alt="" />
       </div>
       <div className="right_area">
-        <Dropdown menu={{ items }} className="mobile_hide">
+        <Dropdown menu={{ items }} >
           <Link onClick={(e) => e.preventDefault()}>
             <Space className="header_dropdown">
               <div className="title">
                 <img src={User} alt="User_Img" />
-                <p>Mahfuzur R.</p>
+                <p className="mobile_hide">Mahfuzur R.</p>
               </div>
-              <IoIosArrowDown />
+              <IoIosArrowDown className="mobile_hide"/>
             </Space>
           </Link>
         </Dropdown>

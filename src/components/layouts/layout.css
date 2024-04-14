@@ -181,4 +181,7 @@
   .mobile_hide {
     display: none;
   }
+  .header_dropdown{
+    padding: 0
+  }
 }
