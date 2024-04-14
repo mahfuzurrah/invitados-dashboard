@@ -145,6 +145,10 @@
   gap: 20px;
 }
 
+.mobile_logo{
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   .main_body {
     padding: 0;
@@ -161,6 +165,10 @@
   .side_navbar.sider-collapsed {
     left: -100%;
     position: fixed !important;
+  }
+
+  .mobile_logo{
+    display: block;
   }
 
   .main_body .top_navbar{
