@@ -155,6 +155,7 @@
   }
   .toggle_btn {
     display: block;
+    color: var(--white-color);
   }
 
   .side_navbar {
@@ -174,6 +175,10 @@
   .main_body .top_navbar {
     justify-content: space-between !important;
     z-index: 999999;
+    background: var(--primary-color);
+  }
+  .header_dropdown{
+    background: transparent;
   }
 }
 
