@@ -46,10 +46,10 @@ function Dashboard() {
                 <div className="text">
                   <p>Upcoming Events</p>
                   <div className="time">
-                    <h1>{countdown.days}</h1> days
-                    <h1>{countdown.hours}</h1> hrs
-                    <h1>{countdown.minutes}</h1> min
-                    <h1>{countdown.seconds}</h1> sec
+                    <h1>{countdown.days}</h1> d
+                    <h1>{countdown.hours}</h1> h
+                    <h1>{countdown.minutes}</h1> m
+                    <h1>{countdown.seconds}</h1> s
                   </div>
                 </div>
                 <img src={cal} alt="Icon" />

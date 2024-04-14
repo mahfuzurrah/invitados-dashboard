@@ -196,4 +196,8 @@
   .dashboard {
     margin-top: 50px;
   }
+
+  .dashboard .card img {
+    width: 30px;
+  }
 }
