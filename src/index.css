@@ -328,7 +328,7 @@ section {
   margin-bottom: 20px;
 }
 
-.table_header .btn{
+.table_header .btn {
   width: max-content;
 }
 
@@ -344,7 +344,13 @@ section {
     flex-direction: column;
   }
 
-  .from_area .btn_group{
+  .from_area .btn_group {
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .time h1 {
+    font-size: 20px;
   }
 }
