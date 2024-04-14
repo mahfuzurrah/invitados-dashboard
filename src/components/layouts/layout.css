@@ -145,7 +145,7 @@
   gap: 20px;
 }
 
-.mobile_logo{
+.mobile_logo {
   display: none;
 }
 
@@ -167,11 +167,11 @@
     position: fixed !important;
   }
 
-  .mobile_logo{
+  .mobile_logo {
     display: block;
   }
 
-  .main_body .top_navbar{
+  .main_body .top_navbar {
     justify-content: space-between !important;
     z-index: 999999;
   }
@@ -181,7 +181,10 @@
   .mobile_hide {
     display: none;
   }
-  .header_dropdown{
-    padding: 0
+  .header_dropdown {
+    gap: 0;
+    position: relative;
+    left: 10px;
+    margin-left: -30px;
   }
 }
