@@ -226,6 +226,7 @@ section {
 
 .from_area .btn {
   width: 100%;
+  width: fit-content;
 }
 
 .from_area .tn_group .btn {
@@ -385,5 +386,8 @@ section {
   .from_area .btn_group {
     margin: 16px 0;
     gap: 10px;
+  }
+  .from_area label {
+    display: none;
   }
 }
