@@ -338,6 +338,10 @@ section {
   gap: 12px;
 }
 
+.fade.add_label.modal.show {
+  z-index: 999999;
+}
+
 @media screen and (max-width: 576px) {
   .input_group {
     display: flex !important;
