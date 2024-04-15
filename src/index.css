@@ -358,10 +358,17 @@ section {
     gap: 20px;
   }
 
+  .from_area h2{
+    text-align: center;
+  }
+
   .sign_in_area img {
     margin-top: 20px;
     position: sticky;
     top: 0;
+  }
+  .from_area .btn {
+    width: 100% !important;
   }
 }
 
@@ -390,7 +397,5 @@ section {
   .from_area label {
     display: none;
   }
-  .from_area .btn {
-    width: 100% !important;
-  }
+ 
 }
