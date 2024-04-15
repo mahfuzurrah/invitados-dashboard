@@ -1,7 +1,7 @@
+import { Space, Table } from "antd";
 import React from "react";
 import { FaRegTrashAlt } from "react-icons/fa";
 import ManageUserPopup from "../Modal/ManageUserPopup";
-import { Space, Table } from "antd";
 const { Column } = Table;
 
 const data = [
@@ -33,7 +33,7 @@ const ManageUserTable = () => (
       x: 991,
     }}
   >
-    <Column title="Name" dataIndex="title" key="title" />
+    <Column title="Nombre" dataIndex="title" key="title" />
     <Column title="ID" dataIndex="id" key="id" />
     <Column title="Type" dataIndex="type" key="type" />
     <Column

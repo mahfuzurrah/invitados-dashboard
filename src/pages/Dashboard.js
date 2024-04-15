@@ -44,12 +44,10 @@ function Dashboard() {
             <div className="col-lg-8 col-md-7 col-sm-12">
               <div className="card">
                 <div className="text">
-                  <p>Upcoming Events</p>
+                  <p>Próximos Eventos</p>
                   <div className="time">
-                    <h1>{countdown.days}</h1> d
-                    <h1>{countdown.hours}</h1> h
-                    <h1>{countdown.minutes}</h1> m
-                    <h1>{countdown.seconds}</h1> s
+                    <h1>{countdown.days}</h1> d<h1>{countdown.hours}</h1> h
+                    <h1>{countdown.minutes}</h1> m<h1>{countdown.seconds}</h1> s
                   </div>
                 </div>
                 <img src={cal} alt="Icon" />
@@ -58,7 +56,7 @@ function Dashboard() {
             <div className="col-lg-4 col-md-5 col-sm-12">
               <div className="card">
                 <div className="text">
-                  <p>Accepted Invitation</p>
+                  <p>Invitación aceptada</p>
                   <h1>500</h1>
                 </div>
                 <img src={user} alt="Icon" />
@@ -67,9 +65,9 @@ function Dashboard() {
           </div>
           <div className="table_area mt-3">
             <div className="table_header">
-              <h2>Recent Registration List</h2>
+              <h2>Confirmaciones recientess</h2>
               <Link to="/guests_list">
-                View all
+                Ver todo
                 <GrFormNextLink className="icons" />
               </Link>
             </div>

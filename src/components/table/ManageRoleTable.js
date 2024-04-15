@@ -1,8 +1,8 @@
 import { Space, Table } from "antd";
 import React from "react";
 import { FaRegTrashAlt } from "react-icons/fa";
-import user from "../assets/img/user.png";
 import ManageRolePopup from "../Modal/ManageRolePopup";
+import user from "../assets/img/user.png";
 const { Column } = Table;
 
 const data = [
@@ -76,17 +76,19 @@ const ManageRoleTable = () => (
       x: 991,
     }}
   >
-    <Column title="Name" dataIndex="title" key="1" />
+    <Column title="Nombre" dataIndex="title" key="1" />
     <Column title="Email" dataIndex="email" key="1" />
     <Column title="Event Name" dataIndex="event" key="1" />
-    <Column title="Date" dataIndex="date" key="muscle" />
+    <Column title="Fecha" dataIndex="date" key="muscle" />
     <Column
       title="Status"
       key="action"
       render={(_, record) => (
         <Space size="middle">
-          <ManageRolePopup/>
-          <button><FaRegTrashAlt className="icons" /></button>
+          <ManageRolePopup />
+          <button>
+            <FaRegTrashAlt className="icons" />
+          </button>
         </Space>
       )}
     />

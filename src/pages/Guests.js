@@ -8,7 +8,7 @@ export default function Guests() {
         <div className="container">
           <div className="table_area">
             <div className="table_header">
-              <h2>Guests List</h2>
+              <h2>Lista de invitados</h2>
             </div>
             <GuestsList />
           </div>

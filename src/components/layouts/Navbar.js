@@ -10,11 +10,11 @@ function Navbar({ toggleSidebar }) {
   const items = [
     {
       key: "1",
-      label: <Link to="#">Profile</Link>,
+      label: <Link to="#">Perfil</Link>,
     },
     {
       key: "2",
-      label: <Link to="/">Log Out</Link>,
+      label: <Link to="/">Cerrar Sesión</Link>,
     },
   ];
 

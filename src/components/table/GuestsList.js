@@ -74,10 +74,10 @@ const GuestsList = () => (
       x: 991,
     }}
   >
-    <Column title="Name" dataIndex="title" key="1" />
+    <Column title="Nombre" dataIndex="title" key="1" />
     <Column title="Email" dataIndex="email" key="1" />
     <Column title="Event Name" dataIndex="event" key="1" />
-    <Column title="Date" dataIndex="date" key="muscle" />
+    <Column title="Fecha" dataIndex="date" key="muscle" />
     <Column
       title="Status"
       key="action"

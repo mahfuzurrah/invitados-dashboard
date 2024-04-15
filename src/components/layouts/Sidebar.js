@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaUserCog, FaUser } from "react-icons/fa";
+import { FaUser, FaUserCog } from "react-icons/fa";
 import { FaClipboardList } from "react-icons/fa6";
 import { MdSpaceDashboard } from "react-icons/md";
 
@@ -11,31 +11,31 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
   const [menuItems, setMenuItems] = useState([
     {
       id: 1,
-      label: "Dashboard",
+      label: "Panel",
       icon: <MdSpaceDashboard className="icons" />,
       isActive: true,
       route: "/dashboard",
     },
     {
       id: 2,
-      label: "Guests List",
+      label: "Lista De Invitados",
       icon: <FaClipboardList className="icons" />,
       isActive: false,
       route: "/guests_list",
     },
     {
       id: 3,
-      label: "Manage Roles",
+      label: "Administrar Roles ",
       icon: <FaUserCog className="icons" />,
       isActive: false,
       route: "/manage_roles",
     },
     {
       id: 4,
-      label: "Manage Users",
+      label: "Administrar Usuarios",
       icon: <FaUser className="icons" />,
       isActive: false,
-      route: "/manage_users"
+      route: "/manage_users",
     },
   ]);
 
@@ -45,7 +45,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       isActive: item.id === id,
     }));
     setMenuItems(updatedItems);
-    
+
     // Close sidebar on mobile and add 'sider-collapsed' class
     if (window.innerWidth <= 991) {
       toggleSidebar();

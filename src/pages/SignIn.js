@@ -28,19 +28,19 @@ function SignIn() {
       <div className="sign_in_area log_container">
         <img src={Logo} alt="Logo" />
         <div action="" className="from_area">
-          <h2>Sign in to your account</h2>
+          <h2>Iniciar sesión en su cuenta</h2>
           <div className="btn_group">
             <button className="btn">
               <FaGoogle />
-              Sign in with Google
+              Inicia sesión con Google
             </button>
             <button className="btn">
               <FaFacebook />
-              Sign in with Facebook
+              Inicia sesión con Facebook
             </button>
             <button className="btn">
               <FaApple />
-              Sign in with Apple
+              Inicia sesión con Apple
             </button>
           </div>
           <p className="my-3 text-center">OR</p>
@@ -67,7 +67,7 @@ function SignIn() {
               ) : (
                 <PiToggleRightFill className="icons" />
               )}{" "}
-              Remember me
+              Acuérdate de mí
             </button>
             <Link to="/dashboard" className="mt-3">
               <button className="btn mt-4 sign_in_btn">Sing In</button>

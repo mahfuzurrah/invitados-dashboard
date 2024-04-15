@@ -9,7 +9,7 @@ export default function ManageRoles() {
         <div className="container">
           <div className="table_area">
             <div className="table_header">
-              <h2>Manage users</h2>
+              <h2>Administrar usuarios</h2>
               <AddUserPopup />
             </div>
             <ManageUserTable />

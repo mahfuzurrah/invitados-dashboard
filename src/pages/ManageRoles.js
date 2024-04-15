@@ -8,7 +8,7 @@ export default function ManageRoles() {
         <div className="container">
           <div className="table_area">
             <div className="table_header">
-              <h2>Manage Roles</h2>
+              <h2>Administrar roles</h2>
             </div>
             <ManageRoleTable />
           </div>
