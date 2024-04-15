@@ -229,7 +229,7 @@ section {
   width: 100%;
   width: fit-content;
 }
-.from_area .btn.sign_in_btn{
+.from_area .btn.sign_in_btn {
   width: 100% !important;
 }
 
@@ -241,6 +241,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  text-align: justify;
 }
 
 .input_f,
@@ -362,7 +363,7 @@ section {
     gap: 20px;
   }
 
-  .from_area h2{
+  .from_area h2 {
     text-align: center;
     margin: 20px 0;
     margin-bottom: 30px;
@@ -403,5 +404,4 @@ section {
   .from_area label {
     display: none;
   }
- 
 }
