@@ -43,7 +43,7 @@ function SignIn() {
               Inicia sesión con Apple
             </button>
           </div>
-          <p className="my-3 text-center">OR</p>
+          <p className="my-3 text-center">O también</p>
           <form action="" className="input_form">
             <div className="input_group">
               <InputField
@@ -56,7 +56,7 @@ function SignIn() {
               <PasswordInput
                 label="Password"
                 value={pass}
-                placeholder="Password"
+                placeholder="Clave"
                 star="*"
                 onChange={handlepassChange}
               />
@@ -70,7 +70,7 @@ function SignIn() {
               Acuérdate de mí
             </button>
             <Link to="/dashboard" className="mt-3">
-              <button className="btn mt-4 sign_in_btn">Sing In</button>
+              <button className="btn mt-4 sign_in_btn">Ingresar</button>
             </Link>
           </form>
         </div>
