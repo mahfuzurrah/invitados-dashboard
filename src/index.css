@@ -203,7 +203,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 85vh;
+  height: 100vh;
   gap: 120px;
   max-width: 850px;
   margin: auto;
@@ -351,10 +351,39 @@ section {
   .from_area .btn_group {
     flex-wrap: wrap;
   }
+
+  .sign_in_area {
+    height: 100vh !important;
+    gap: 20px;
+  }
+
+  .sign_in_area img {
+    margin-top: 20px;
+    position: sticky;
+    top: 0;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .time h1 {
     font-size: 20px;
+  }
+
+  .sign_in_area .btn {
+    font-size: 14px;
+  }
+
+  .from_area {
+    padding: 20px;
+  }
+  .from_area .input_group {
+    gap: 10px;
+  }
+  .from_area .input_group .mt-3 {
+    margin-top: 0 !important;
+  }
+  .from_area .btn_group {
+    margin: 16px 0;
+    gap: 10px;
   }
 }
