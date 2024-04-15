@@ -390,4 +390,7 @@ section {
   .from_area label {
     display: none;
   }
+  .from_area .btn {
+    width: 100% !important;
+  }
 }
