@@ -328,6 +328,19 @@ section {
   gap: 10px;
 }
 
+.dashboard .card .time .item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard .card .time span {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: 8px;
+}
+
 .table_area {
   padding: 20px;
   background: var(--white-color);

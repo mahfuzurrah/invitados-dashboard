@@ -46,10 +46,23 @@ function Dashboard() {
                 <div className="text">
                   <p>Cuenta regresiva</p>
                   <div className="time">
-                    <h1>{countdown.days}</h1> días<h1>{countdown.hours}</h1>{" "}
-                    horas
-                    <h1>{countdown.minutes}</h1> minutos
-                    <h1>{countdown.seconds}</h1> segundos
+                    <div className="item">
+                      <span>
+                        <h1>{countdown.days}</h1> días
+                      </span>
+                      <span>
+                        <h1>{countdown.hours}</h1>
+                        horas
+                      </span>
+                    </div>
+                    <div className="item">
+                      <span>
+                        <h1>{countdown.minutes}</h1> minutos
+                      </span>
+                      <span>
+                        <h1>{countdown.seconds}</h1> segundos
+                      </span>
+                    </div>
                   </div>
                 </div>
                 <img src={cal} alt="Icon" />
