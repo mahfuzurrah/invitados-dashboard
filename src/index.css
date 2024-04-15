@@ -360,6 +360,8 @@ section {
 
   .from_area h2{
     text-align: center;
+    margin: 20px 0;
+    margin-bottom: 30px;
   }
 
   .sign_in_area img {
