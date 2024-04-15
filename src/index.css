@@ -228,6 +228,9 @@ section {
   width: 100%;
   width: fit-content;
 }
+.from_area .btn.sign_in_btn{
+  width: 100% !important;
+}
 
 .from_area .tn_group .btn {
   width: min-content !important;

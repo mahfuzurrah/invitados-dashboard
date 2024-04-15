@@ -70,7 +70,7 @@ function SignIn() {
               Remember me
             </button>
             <Link to="/dashboard" className="mt-3">
-              <button className="btn mt-4">Sing In</button>
+              <button className="btn mt-4 sign_in_btn">Sing In</button>
             </Link>
           </form>
         </div>
