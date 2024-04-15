@@ -13,9 +13,10 @@ const MainLayout = () => {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+  
   return (
     <Layout>
-      <Sidebar isOpen={isSidebarOpen}/>
+      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar}/>
       <Layout className="main_body">
         <Header className="top_navbar">
           <Navbar toggleSidebar={toggleSidebar}/>

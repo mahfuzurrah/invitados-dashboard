@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/img/logo.png";
 import "./layout.css";
 
-const Sidebar = ({ isOpen }) => {
+const Sidebar = ({ isOpen, toggleSidebar }) => {
   const [menuItems, setMenuItems] = useState([
     {
       id: 1,
@@ -45,6 +45,11 @@ const Sidebar = ({ isOpen }) => {
       isActive: item.id === id,
     }));
     setMenuItems(updatedItems);
+    
+    // Close sidebar on mobile and add 'sider-collapsed' class
+    if (window.innerWidth <= 991) {
+      toggleSidebar();
+    }
   };
 
   return (
